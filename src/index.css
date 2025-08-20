@@ -89,6 +89,7 @@ nav > ul > li:hover {
 }
 
 .call-to-action img {
+    transform: translateY(-50px);
     width: 375px;
     height: 438px;
     border-radius: 10px;
