@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #FFF;
+    width: 100vw;
+}
+
+nav, section {
+    padding: 0px 26rem;
+}
+
+nav {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > ul {
+    display: flex; 
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+nav > ul > li {
+    cursor: pointer;
+    color: #495e57;
+    font-weight: bold;
+    font-family: 'Karla';
+}
+
+nav > ul > li:hover {
+    color: #f4ce14;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    background-color: #495e57;
+    position: relative;
+    overflow: visible;
+    height: 320px;
+}
+
+.call-to-action > div {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.call-to-action p {
+    margin-top: 1rem;
+}
+
+.call-to-action h1, .call-to-action h2 {
+    font-family: 'Markazi Text';
+}
+
+.call-to-action h1 {
+    line-height: 40px;
+    color: #FFF;
+    font-size: 64pt;
+    font-weight: 300;
+}
+
+.call-to-action h2 {
+    color: #f4ce14;
+    font-size: 40pt;
+    font-weight: 100;
+}
+
+.call-to-action p {
+    font-family: 'Karla';
+    color: #FFF;
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.call-to-action img {
+    width: 375px;
+    height: 438px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    cursor: pointer;
+
+    width: 200px;
+    height: 60px;
+
+    border-radius: 6px;
+    border: none;
+
+    background-color: #f4ce14;
+    color: #000;
+    font-family: 'Karla';
+    font-weight: 800;
+
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c5a70f;
+}
