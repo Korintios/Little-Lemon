@@ -1,5 +1,5 @@
-import bannerOne from "../assets/banner_one.jpg";
-import bannerTwo from "../assets/banner_two.jpg";
+import bannerOne from "../assets/restaurant.jpg";
+import bannerTwo from "../assets/banner_one.jpg";
 
 export default function Chicago() {
     return (
