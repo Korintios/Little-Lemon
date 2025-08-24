@@ -8,10 +8,11 @@
 html {
     background-color: #FFF;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 nav, section {
-    padding: 0px 26rem;
+    padding: 0px 32rem;
 }
 
 nav {
@@ -52,7 +53,7 @@ nav > ul > li:hover {
 }
 
 .call-to-action > div {
-    width: 500px;
+    width: 400px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -96,11 +97,11 @@ nav > ul > li:hover {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-button {
+.call-to-action button, .specials-header button {
     cursor: pointer;
 
     width: 200px;
-    height: 60px;
+    height: 35px;
 
     border-radius: 6px;
     border: none;
@@ -115,4 +116,235 @@ button {
 
 button:hover {
     background-color: #c5a70f;
+}
+
+.specials {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.specials-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.specials-header h2 {
+    font-family: 'Markazi Text';
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.specials-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.specials-card {
+    width: 277px;
+    height: 480px;
+    background-color: #edefee;
+    border-radius: 10px;
+}
+
+.specials-card-content {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.specials-card-content-title {
+    font-family: 'Markazi Text';
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.specials-card-content-description {
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.specials-card button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    color: #000;
+}
+
+.specials-card .delivery-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.specials-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.specials-card-content-button {
+    font-family: 'Karla';
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.specials-card-content-button:hover {
+    opacity: 0.5;
+}
+
+.testimonials {
+    height: 70vh;
+    background-color: #495e57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials h2 {
+    font-family: 'Markazi Text';
+    font-size: 50px;
+    font-weight: 500;
+    color: #f4ce14;
+    margin-bottom: 3rem;
+}
+
+.testimonials-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.testimonials-card {
+    width: 284px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.testimonials-card h3 {
+    font-family: 'Markazi Text';
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.testimonials-card img {
+    width: 64px;
+    height: 64px;
+}
+
+.testimonials-card p {
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.testimonials-card-stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.testimonials-card-stars-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.testimonials-card-stars-container img {
+    width: 28px;
+}
+
+.chicago {
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.chicago-text {
+    width: 400px;
+    margin-top: 100px;
+}
+
+.chicago h1 {
+    font-family: 'Markazi Text';
+    font-size: 60px;
+    font-weight: 500;
+    color: #495e57;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+.chicago h2 {
+    font-family: 'Markazi Text';
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.chicago p {
+    margin-top: 4rem;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.chicago-images > img {
+    width: 266px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.chicago-image-one {
+    z-index: 2;
+    top: 300px;
+    left: 180px;
+}
+
+.chicago-image-two {
+    z-index: 1;
+    top: 100px;
+    left: 30px;
+}
+
+.footer-page {
+    display: flex;
+    width: 100%;
+}
+
+.footer-page > div {
+    display: flex;
 }
