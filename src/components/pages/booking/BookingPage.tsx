@@ -1,7 +1,10 @@
+import BookingForm from "./BookingForm";
+
 export default function BookingPage() {
     return (
-        <div>
-            <h1>Booking Page</h1>
+        <div className="booking-page">
+            <h1>Reserva tu Mesa</h1>
+            <BookingForm />
         </div>
     )
 }
