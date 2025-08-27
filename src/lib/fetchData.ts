@@ -22,6 +22,6 @@ export const fetchAPI = function(date: Date) {
     return result;
 };
 
-const submitAPI = function(formData: Record<string,string>) {
+export const submitAPI = function(formData: Record<string,string>) {
     return true;
 };

@@ -379,3 +379,79 @@ button:hover {
     opacity: 0.5;
 }
 
+.booking-page {
+    height: 100vh;
+    background-color: #495e57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-page h1 {
+    font-family: 'Markazi Text';
+    font-size: 60px;
+    font-weight: 500;
+    color: #f4ce14;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.booking-page form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-page form > .field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field-container label {
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.field-container input, .field-container select {
+    outline: none;
+    width: 300px;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    padding: 0px 10px;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.field-container > select {
+    width: 100%;
+}
+
+.field-container span {
+    font-family: 'Karla';
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+}
+
+.booking-page form > input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 35px;
+    font-family: 'Karla';
+    font-weight: 600;
+    background-color: #f4ce14;
+    border-radius: 8px;
+}
+
+.booking-page form > input[type="submit"]:hover {
+    background-color: #c5a70f;
+}
