@@ -455,3 +455,22 @@ button:hover {
 .booking-page form > input[type="submit"]:hover {
     background-color: #c5a70f;
 }
+
+.confirmed-booking {
+    width: 100%;
+    height: 100vh;
+    background-color: #495e57;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4ce14;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmed-booking span {
+    color: white;
+}

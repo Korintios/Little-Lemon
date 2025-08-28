@@ -101,7 +101,7 @@ export default function BookingForm({ submitForm }: { submitForm: (form: Record<
             aria-label="Formulario de reserva de restaurante"
         >
             <div className="field-container">
-                <label htmlFor="date">Fecha de Reserva</label>
+                <label htmlFor="date">Fecha de Reserva <span>*</span></label>
                 <input
                     type="date"
                     id="date"
@@ -122,7 +122,7 @@ export default function BookingForm({ submitForm }: { submitForm: (form: Record<
                 </span>
             </div>
             <div className="field-container">
-                <label htmlFor="time">Hora de Reserva</label>
+                <label htmlFor="time">Hora de Reserva <span>*</span></label>
                 <select
                     id="time"
                     onChange={handleChange}
@@ -130,7 +130,7 @@ export default function BookingForm({ submitForm }: { submitForm: (form: Record<
                     aria-invalid={!!errors.time}
                     aria-describedby={errors.time ? "time-error" : undefined}
                 >
-                    <option value="null" selected>Selecciona una hora</option>
+                    <option value="null" selected>Selecciona una hora <span>*</span></option>
                     {timeState.map((time: string) => (
                         <option id="time-option" key={time}>{time}</option>
                     ))}
@@ -145,7 +145,7 @@ export default function BookingForm({ submitForm }: { submitForm: (form: Record<
                 </span>
             </div>
             <div className="field-container">
-                <label htmlFor="guests">Numero de invitados</label>
+                <label htmlFor="guests">Numero de invitados <span>*</span></label>
                 <input
                     type="number"
                     placeholder="1"
@@ -167,7 +167,7 @@ export default function BookingForm({ submitForm }: { submitForm: (form: Record<
                 </span>
             </div>
             <div className="field-container">
-                <label htmlFor="occasion">Ocasion</label>
+                <label htmlFor="occasion">Ocasion <span>*</span></label>
                 <select
                     id="occasion"
                     onChange={handleChange}
@@ -194,11 +194,6 @@ export default function BookingForm({ submitForm }: { submitForm: (form: Record<
                 disabled={nowForSubmit}
                 aria-describedby={nowForSubmit ? "submit-help" : undefined}
             />
-            {nowForSubmit && (
-                <span id="submit-help" role="status" aria-live="polite">
-                    Completa todos los campos requeridos para habilitar el botón de envío
-                </span>
-            )}
         </form>
     )
 }
